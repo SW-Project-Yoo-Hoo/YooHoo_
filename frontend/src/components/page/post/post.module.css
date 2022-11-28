@@ -1,0 +1,607 @@
+@value mainGreen,mainOrange,highlight1,background1,textInput,textInputPlace,lightWhite,shadow,iconLightGrey,unselect from "../../../common/color.css";
+@value marginLeftRight from "../../../common/size.css";
+
+.colorHighlight1 {
+  color: highlight1;
+}
+
+.colorMainGreen {
+  color: mainGreen;
+}
+
+.colorUnselect {
+  color: unselect;
+}
+
+.colorIconLightGrey {
+  color: iconLightGrey;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayFlex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: background1;
+  position: relative;
+  padding-bottom: 12.5vw;
+}
+
+/* header */
+.backGroundIamgeHeader {
+  background-image: url("../../../../public/images/headerBackground.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12.34375vw;
+  position: absolute;
+  z-index: 0;
+}
+
+/* foot */
+.bottomContainer {
+  position: relative;
+}
+
+.backGroundIamgeFoot {
+  background-image: url("../../../../public/images/footBackground.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20.7638vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* contents */
+.postContainer {
+  position: relative;
+  margin: 2.5694vw marginLeftRight 12.5vw marginLeftRight;
+  z-index: 1;
+}
+
+.title {
+  height: 3.6458vw;
+  margin-bottom: 2.0833vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightWhite;
+  border-radius: 0.8333vw;
+  box-shadow: 0 0.0694vw 6px shadow;
+  align-items: center;
+}
+
+.titleText {
+  font-family: "Medium";
+  font-size: 0.9722vw;
+  color: highlight1;
+  padding-left: 2.0833vw;
+}
+
+.titleInput {
+  margin-right: 3.8194vw;
+  width: 50%;
+  text-align: right;
+  border: none;
+  background: lightWhite;
+  color: mainGreen;
+  font-family: "Medium";
+  font-size: 0.9722vw;
+}
+
+.titleInput::placeholder {
+  color: textInput;
+  font-size: 0.9722vw;
+}
+
+.imageEnroll {
+  height: 9.6354vw;
+  margin-bottom: 2.6041vw;
+  display: grid;
+  align-content: space-between;
+}
+
+.imageEnrollText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.textMain {
+  font-size: 0.9722vw;
+  font-family: "Medium";
+}
+
+.textSub {
+  font-size: 0.6944vw;
+  font-family: "Regular";
+  color: mainGreen;
+}
+
+.imageEnrollPick {
+  height: 7.2916vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.imagePicked {
+  width: 52.7083vw;
+  height: 7.2916vw;
+  border-radius: 0.8333vw;
+  background-color: lightWhite;
+  box-shadow: 0 0.0694vw 6px shadow;
+  display: flex;
+  align-items: center;
+}
+
+.imageUnPick {
+  background-color: iconLightGrey;
+  width: 5.2083vw;
+  height: 5.2083vw;
+  display: flex;
+  margin-left: calc(1.0416vw + 0.9722vw);
+  border-radius: 0.7638vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageUnPickIcon {
+  width: 2.0833vw;
+  height: 2.0833vw;
+  color: textInputPlace;
+}
+
+.imagePickedBord {
+  width: 5.2083vw;
+  height: 5.2083vw;
+  display: flex;
+  margin-left: 1.0416vw;
+  border-radius: 0.7638vw;
+}
+
+.imagePickedStyle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.7638vw;
+}
+
+.deleteButton {
+  border-radius: 0.7638vw;
+  width: 0.9722vw;
+  height: 0.9722vw;
+  position: relative;
+  background-color: lightWhite;
+  top: -0.2777vw;
+  left: 5.4861vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteButtonStyle {
+  color: textInput;
+  width: 0.9722vw;
+  height: 0.9722vw;
+}
+
+.buttonStyle {
+  width: 11.3888vw;
+  height: 2.9166vw;
+  border-radius: 1.0416vw;
+  background-color: mainGreen;
+  font-family: "Medium";
+  font-size: 0.9375vw;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-style: none;
+}
+
+.stuff {
+  height: 5.9895vw;
+  margin-bottom: 3.125vw;
+  display: grid;
+  align-content: space-between;
+}
+
+.stuffPick {
+  height: 3.6458vw;
+  background-color: lightWhite;
+  border-radius: 0.8333vw;
+  box-shadow: 0 0.0694vw 6px shadow;
+  display: flex;
+}
+
+.stuffChoice {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.stuffName {
+  padding-left: 1.5625vw;
+  font-family: "Regular";
+  font-size: 0.8333vw;
+}
+
+.stuffIcon {
+  margin-right: 1.0416vw;
+  width: 1.1111vw;
+  height: 1.1111vw;
+}
+
+.stuffLineName {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid iconLightGrey;
+  height: 100%;
+}
+
+.deal {
+  height: 6.4062vw;
+  margin-bottom: 3.125vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.unit {
+  width: 38.8888vw;
+  display: grid;
+  align-content: space-between;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #f3f4f5;
+}
+
+.unitPick {
+  width: 100%;
+  height: 3.6458vw;
+  background-color: lightWhite;
+  border-radius: 0.8333vw;
+  box-shadow: 0 0.0694vw 6px shadow;
+  display: flex;
+}
+
+.priceQuantity {
+  width: 25.2083vw;
+  display: grid;
+  align-content: space-between;
+}
+
+.priceQuantityPick {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  width: 14.5833vw;
+  height: 3.6458vw;
+  background-color: lightWhite;
+  border-radius: 0.8333vw;
+  box-shadow: 0 0.0694vw 6px shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5972vw 0 1.5972vw;
+  color: highlight1;
+}
+
+.priceQuantityTitle {
+  font-size: 0.7638vw;
+  font-family: "Medium";
+}
+
+.priceInput {
+  margin-right: 0.243vw;
+  width: 5.9722vw;
+  text-align: right;
+  border: none;
+  background: lightWhite;
+  color: mainGreen;
+  font-family: "Medium";
+  font-size: 0.9027vw;
+}
+
+.quantityInput {
+  width: 3.0555vw;
+}
+
+.priceQuantityUnit {
+  font-size: 0.8333vw;
+  font-family: "Regular";
+}
+
+.quantity {
+  width: 9.2361vw;
+  height: 3.6458vw;
+  background-color: lightWhite;
+  border-radius: 0.8333vw;
+  box-shadow: 0 0.0694vw 6px shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5972vw 0 1.5972vw;
+  color: highlight1;
+}
+
+.detailText {
+  height: 14.3229vw;
+  margin-bottom: 6.25vw;
+  display: grid;
+  align-content: space-between;
+}
+
+.detailTextFild {
+  height: 11.9791vw;
+  background-color: lightWhite;
+  border-radius: 0.8333vw;
+  box-shadow: 0 0.0694vw 6px shadow;
+}
+
+.detailTextFildInput {
+  margin: 1.5972vw;
+  width: calc(100% - 1.5972vw - 1.5972vw);
+  text-align: left;
+  border: none;
+  background: lightWhite;
+  color: highlight2;
+  font-family: "Regular";
+  font-size: 0.9027vw;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.detailTextFildInput::placeholder {
+  color: textInput;
+  font-size: 0.9027vw;
+}
+
+.enrollButton {
+  place-items: center;
+  display: grid;
+  justify-content: center;
+}
+
+.alertText {
+  font-family: "Medium";
+  font-size: 0.8333vw;
+  color: mainOrange;
+  padding-bottom: 0.8333vw;
+}
+
+/* 1920px 이상  */
+@media (min-width: 1920px) {
+  .backGroundIamgeHeader {
+    background-size: 100vw 237px;
+    min-height: 237px;
+  }
+
+  .backGroundIamgeFoot {
+    background-size: 100vw 300px;
+    height: 300px;
+  }
+
+  .container {
+    padding-bottom: 240px;
+  }
+
+  /* contents */
+  .postContainer {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 240px;
+    width: 1280px;
+  }
+
+  .title {
+    height: 70px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+  }
+
+  .titleText {
+    font-family: "Medium";
+    font-size: 20px;
+    color: highlight1;
+    padding-left: 30px;
+  }
+
+  .titleInput {
+    margin-right: 52px;
+    width: 370px;
+    font-size: 20px;
+  }
+
+  .titleInput::placeholder {
+    font-size: 20px;
+  }
+
+  .imageEnroll {
+    height: 185px;
+    margin-bottom: 50px;
+  }
+
+  .textMain {
+    font-size: 20px;
+  }
+
+  .textSub {
+    font-size: 14px;
+  }
+
+  .imageEnrollPick {
+    height: 140px;
+  }
+
+  .imagePicked {
+    width: 1012px;
+    height: 140px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+  }
+
+  .imageUnPick {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-left: calc(20px + 18px);
+    border-radius: 14px;
+  }
+
+  .imageUnPickIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .imagePickedBord {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border-radius: 14px;
+  }
+
+  .imagePickedStyle {
+    border-radius: 14px;
+  }
+
+  .deleteButton {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -7px;
+    left: 106px;
+  }
+
+  .deleteButtonStyle {
+    color: textInput;
+    width: 18px;
+    height: 18px;
+  }
+
+  .buttonStyle {
+    width: 218px;
+    height: 56px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+
+  .stuff {
+    height: 115px;
+    margin-bottom: 60px;
+    display: grid;
+    align-content: space-between;
+  }
+
+  .stuffPick {
+    height: 70px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+  }
+
+  .stuffName {
+    padding-left: 30px;
+    font-family: "Regular";
+    font-size: 16px;
+  }
+
+  .stuffIcon {
+    margin-right: 20px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .deal {
+    height: 123px;
+    margin-bottom: 60px;
+  }
+
+  .unit {
+    width: 746px;
+  }
+
+  .unitPick {
+    height: 70px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+  }
+
+  .priceQuantity {
+    width: 484px;
+  }
+
+  .price {
+    width: 280px;
+    height: 70px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+    padding: 0 30px 0 30px;
+  }
+
+  .priceQuantityTitle {
+    font-size: 16px;
+  }
+
+  .priceInput {
+    margin-right: 4px;
+    width: 118px;
+    font-size: 18px;
+  }
+
+  .quantityInput {
+    width: 62px;
+  }
+
+  .priceQuantityUnit {
+    font-size: 16px;
+  }
+
+  .quantity {
+    width: 177px;
+    height: 70px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+    padding: 0 30px 0 30px;
+  }
+
+  .detailText {
+    height: 275px;
+    margin-bottom: 120px;
+  }
+
+  .detailTextFild {
+    height: 230px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+  }
+
+  .detailTextFildInput {
+    margin: 30px;
+    width: calc(100% - 30px - 30px);
+    font-size: 18px;
+  }
+
+  .detailTextFildInput::placeholder {
+    font-size: 18px;
+  }
+
+  .alertText {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+}

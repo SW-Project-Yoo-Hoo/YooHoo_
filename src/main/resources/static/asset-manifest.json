@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d0f2afbe.css",
+    "main.js": "/static/js/main.42a9c6f8.js",
+    "static/media/NotoSansKR-Black.otf": "/static/media/NotoSansKR-Black.c72003ce08c117aba234.otf",
+    "static/media/NotoSansKR-Bold.otf": "/static/media/NotoSansKR-Bold.77fb515ff22f676d50fb.otf",
+    "static/media/NotoSansKR-Medium.otf": "/static/media/NotoSansKR-Medium.9332e36e03e67737c6f1.otf",
+    "static/media/NotoSansKR-Regular.otf": "/static/media/NotoSansKR-Regular.8918c6411881646fdcfc.otf",
+    "static/media/background.png": "/static/media/background.4fad743c57806ca53f70.png",
+    "static/media/headerBackground.png": "/static/media/headerBackground.a0e76b5baddf03efc23f.png",
+    "static/media/footBackground.png": "/static/media/footBackground.abd90fb3de99c743e6ba.png",
+    "index.html": "/index.html",
+    "main.d0f2afbe.css.map": "/static/css/main.d0f2afbe.css.map",
+    "main.42a9c6f8.js.map": "/static/js/main.42a9c6f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0f2afbe.css",
+    "static/js/main.42a9c6f8.js"
+  ]
+}

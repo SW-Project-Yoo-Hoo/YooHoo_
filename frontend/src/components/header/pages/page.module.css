@@ -1,0 +1,45 @@
+/* @value mainGreen from "../../../common/size.css"; */
+@value highlight1,mainGreen from '../../../common/color.css';
+
+@font-face {
+  font-family: "Medium";
+  src: url("../../../common/font/NotoSansKR-Medium.otf");
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageStyle {
+  padding-left: 0.972vw;
+  padding-right: 1.7361vw;
+  list-style-type: none;
+}
+
+.active:hover {
+  font-size: 16px;
+  color: mainGreen;
+  font-family: "Medium";
+}
+
+.active {
+  font-size: 16px;
+  color: highlight1;
+  font-family: "Medium";
+  text-decoration: none;
+}
+
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .pageStyle {
+    padding-left: 16px;
+    padding-right: 34px;
+    list-style-type: none;
+  }
+
+  .active,
+  .active:hover {
+    font-size: 18px;
+  }
+}

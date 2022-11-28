@@ -1,0 +1,30 @@
+@value highlight1 from '../../../common/color.css';
+
+.icon {
+  width: 23px;
+  height: 23px;
+  color: highlight1;
+  margin-left: 1.5277vw;
+}
+
+.userInfo {
+  display: flex;
+  padding-left: 0;
+}
+.liStyle {
+  list-style-type: none;
+}
+
+.liStyle > a {
+  display: flex;
+  justify-content: center;
+}
+
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+  }
+}

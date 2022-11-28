@@ -1,0 +1,30 @@
+/* 메인 */
+@value mainGreen: #006837;
+@value mainOrange: #EA973E;
+
+/* 일러스트 */
+@value picBackground: #F3EDDC;
+@value picSub: #DFB679;
+@value picMain: #F1B254;
+
+/* 배경 */
+/* background1 < background2 */
+@value background1: #FEFBF1;
+@value background2: #FAF5E7;
+
+/* 글자 */
+/* highlight3 < highlight2 < highlight1 */
+@value textInput: #D8D8D8;
+@value textInputPlace: #ACACAC;
+@value unselect: #6E6E6E;
+@value highlight1: #431E10;
+@value highlight2: #3B2F48;
+@value highlight3: #725F59;
+
+/* 기타 */
+@value iconLightGrey: #E6E6E6;
+@value calender: #CDE1D7;
+@value boldWhite: #FDFBF6;
+@value lightWhite: #FFFEFA;
+@value line: #F4E6BC;
+@value shadow: #D6D6D6;

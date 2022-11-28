@@ -1,0 +1,33 @@
+server:
+  port: 8181
+  servlet:
+    session:
+      tracking-modes: cookie
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3307/yoohoodb
+    username: root
+    password: 3965
+    driver-class-name: org.mariadb.jdbc.Driver
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 40MB
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        #        show_sql: true
+        format_sql: true
+
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace
+
+
+
+file.dir: C:\GitHub\Front-end\yoohoo\public\productList\

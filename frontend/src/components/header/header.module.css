@@ -1,0 +1,45 @@
+@value marginLeftRight from "../../common/size.css";
+@value background2,line from '../../common/color.css';
+
+.wrapHeader {
+  width: 100vw;
+  height: 100%;
+  border-bottom: 1px solid;
+  border-color: line;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  background-color: background2;
+}
+.header {
+  background-color: background2;
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  width: 66vw;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logoStyle {
+  width: 76px;
+  height: 23px;
+}
+
+.headerComponent {
+  display: flex;
+  align-items: center;
+}
+
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .header {
+    height: 100px;
+    width: 1280px;
+  }
+  .logoStyle {
+    width: 100px;
+    height: 30px;
+  }
+}

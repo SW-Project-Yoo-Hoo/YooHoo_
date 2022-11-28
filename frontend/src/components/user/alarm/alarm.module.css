@@ -1,0 +1,307 @@
+@value mainOrange, mainGreen, highlight1, highlight3, background1, shadow, textInput, textInputPlace, lightWhite, line, iconLightGrey from "../../../common/color.css";
+@value marginLeftRight from "../../../common/size.css";
+
+/* ================================= */
+/* 헤더, 배경, 푸터 CSS */
+
+.background {
+  width: 100vw;
+  background-color: background1;
+  position: relative;
+}
+
+.headerImg {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+/* ================================= */
+
+.container {
+  width: 100vw;
+  background-color: background1;
+  z-index: 2;
+}
+
+.backImg {
+  width: 100vw;
+  height: 100%;
+  transform: translateY(-3.0503vw);
+  z-index: -2;
+}
+
+.alarmList {
+  position: relative;
+  margin: 0;
+  padding-top: 3.0503vw;
+  /* padding-bottom: alarm의 margin-bottom 뺀 길이 */
+  padding-bottom: 11.7361vw;
+  padding-left: 0;
+  z-index: 1;
+}
+
+.megaphoneImg {
+  width: 9.375vw;
+  height: 9.375vw;
+  position: absolute;
+  top: -5.175vw;
+  right: 0;
+  z-index: 1;
+}
+
+.alarmItems {
+  margin-left: 19.0278vw;
+  margin-right: 16.6667vw;
+  position: relative;
+}
+
+.alarmItems::marker {
+  content: "";
+}
+
+.hrFirst,
+.hr2First,
+.hr,
+.hr2 {
+  position: absolute;
+  border-left: 0.1389vw solid iconLightGrey;
+  margin-left: 0.9028vw;
+  margin-top: 1.875vw;
+}
+
+.hrFirst {
+  height: 6.5702vw;
+}
+
+.hr {
+  height: 8.6722vw;
+}
+
+.hr2 {
+  height: 7.9639vw;
+  transform: translateY(-2.8056vw);
+}
+
+.hr2First {
+  height: 4.6702vw;
+  transform: translateY(-1.5056vw);
+}
+
+.circle,
+.circle2 {
+  width: 0.7639vw;
+  height: 0.7639vw;
+  border: 0.1389vw solid highlight3;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin-left: 0.5556vw;
+  margin-top: 5.2778vw;
+}
+
+.circle2 {
+  margin-top: 1.8056vw;
+}
+
+.containDate {
+  margin-top: 2.0833vw;
+}
+
+.alarm {
+  margin-bottom: 1.8056vw;
+}
+
+.dayContiner {
+  display: flex;
+  justify-content: cetner;
+  align-items: center;
+  margin-bottom: 1.5972vw;
+}
+
+.timeImg {
+  width: 1.875vw;
+  height: 1.875vw;
+  margin-right: 1.0417vw;
+}
+
+.day {
+  margin: 0;
+  font-size: 0.8333vw;
+  font-family: "Regular";
+  color: highlight1;
+}
+
+.contents,
+.contents2 {
+  width: 61.6667vw;
+  height: 4.905vw;
+  background-color: lightWhite;
+  margin-left: 2.6389vw;
+  border-radius: 0.8333vw;
+  box-shadow: 0 0.0694vw 0.3472vw shadow;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.pic {
+  margin: 0.2633vw 0.8333vw 0 1.0417vw;
+}
+
+.productImg {
+  width: 2.5106vw;
+  height: 2.5106vw;
+  border: 0.0694vw solid textInput;
+  border-radius: 0.3472vw;
+  object-fit: cover;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.8333vw;
+  font-family: "Medium";
+  color: mainOrange;
+  margin-bottom: 0.2083vw;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.7639vw;
+  font-family: "Regular";
+  color: highlight1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* ================================= */
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .headerImg {
+    height: 237px;
+  }
+
+  .backImg {
+    position: absolute;
+    transform: translateY(-59px);
+  }
+
+  .alarmList {
+    width: 100vw;
+    padding-top: 59px;
+    padding-bottom: 225px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: cetner;
+    align-items: center;
+  }
+
+  .megaphoneImg {
+    width: 180px;
+    height: 180px;
+    top: -58px;
+  }
+
+  .alarmItems {
+    margin: 0 320px 0 365px;
+  }
+
+  .hrFirst,
+  .hr2First,
+  .hr,
+  .hr2 {
+    border-left: 2px solid iconLightGrey;
+    margin-left: 17px;
+    margin-top: 76px;
+  }
+
+  .hrFirst {
+    height: 115px;
+  }
+
+  .hr {
+    height: 193px;
+  }
+
+  .hr2 {
+    height: 140px;
+    transform: translateY(-53px);
+  }
+
+  .hr2First {
+    height: 43px;
+    transform: translateY(-30px);
+  }
+
+  .circle,
+  .circle2 {
+    width: 14px;
+    height: 14px;
+    border: 2px solid highlight3;
+    margin-left: 10px;
+    margin-top: 140px;
+  }
+
+  .circle2 {
+    margin-top: 35px;
+  }
+
+  .containDate {
+    margin-top: 40px;
+  }
+
+  .alarm {
+    margin-bottom: 35px;
+  }
+
+  .dayContiner {
+    margin-bottom: 30px;
+  }
+
+  .timeImg {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+  }
+
+  .day {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .contents,
+  .contents2 {
+    width: 1184px;
+    height: 84px;
+    margin: 0 0 0 57px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px shadow;
+  }
+
+  .pic {
+    margin: 6px 16px 0 20px;
+  }
+
+  .productImg {
+    width: 46px;
+    height: 46px;
+    border: 1px solid textInput;
+    border-radius: 6px;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .description {
+    margin: 0;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,189 @@
+@value highlight1,unselect,textInput,iconLightGrey from "../../../../common/color.css";
+
+.displayNone {
+  display: none;
+}
+
+.colorUnselcet {
+  color: unselect;
+}
+
+.container {
+  margin: 2.0833vw 0.7291vw 5.243vw 2.1875vw;
+  min-height: 13.125vw;
+}
+
+.noPost {
+  display: flex;
+  height: 13.4895vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Regular";
+  font-size: 0.6944vw;
+  color: highlight1;
+  margin-right: calc(2.1875vw - 0.7291vw); /*컨테이너 마진 왼-오*/
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2.6388vw;
+}
+
+.post {
+  margin-right: 1.4583vw;
+  font-family: "Regular";
+  font-size: 0.6944vw;
+  cursor: pointer;
+}
+
+.postImgDay {
+  position: relative;
+}
+
+.returnButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5555vw;
+  z-index: 1;
+}
+
+.iconButton {
+  transform: rotate(90deg);
+  width: 1.3888vw;
+  height: 1.3888vw;
+  color: textInput;
+  background-color: white;
+  background-size: 1.3888vw 1.3888vw;
+  border-radius: 50%;
+}
+
+.postImg {
+  width: 100%;
+  height: 10.2083vw;
+  margin-bottom: 0.625vw;
+  border-radius: 1.6666vw;
+  object-fit: cover;
+}
+
+.postTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 0.2083vw;
+  word-wrap: brek-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.dealDate {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.4166vw;
+  padding-right: 0.4166vw;
+  color: unselect;
+}
+
+.dealDateMargin {
+  margin-bottom: 0.1388vw;
+}
+
+.returnButtonShow {
+  position: absolute;
+  width: 5.2083vw;
+  background-color: white;
+  z-index: 1;
+  border: 1px solid iconLightGrey;
+  border-radius: 0.4166vw;
+  top: calc(
+    0.5555vw + 1.3888vw + 0.4166vw
+  ); /* 아이콘 마진 + 아이콘 높이 + 6px*/
+  right: calc(-5.2083vw + 0.5555vw + 0.6944vw);
+  /*-버튼너비 + 아이콘 마진 + 아이콘너비/2*/
+}
+
+.returnButtonText {
+  display: flex;
+  height: 2.5vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6944vw;
+  color: highlight1;
+}
+
+.returnButtonLine {
+  border-top: 1px solid iconLightGrey;
+}
+
+@media screen and (min-width: 1024px), screen and (max-width: 1440px) {
+  .returnButtonShow {
+    width: 77px;
+    right: calc(-77px + 0.5555vw + 0.6944vw);
+  }
+}
+
+/* 1920px 이상  */
+@media (min-width: 1920px) {
+  .container {
+    margin: 40px 14px 100px 42px;
+    min-height: 252px;
+  }
+
+  .noPost {
+    font-size: 16px;
+    height: 259px;
+    margin-right: calc(42px - 14px); /*컨테이너 마진 왼-오*/
+  }
+
+  .gridWrapper {
+    row-gap: 50px;
+  }
+
+  .post {
+    margin-right: 28px;
+    font-size: 14px;
+  }
+
+  .returnButton {
+    margin: 10px;
+  }
+
+  .iconButton {
+    width: 26.66px;
+    height: 26.66px;
+  }
+
+  .postImg {
+    width: 100%;
+    height: 196px;
+    margin-bottom: 12px;
+    border-radius: 32px;
+  }
+
+  .postTitle {
+    padding-bottom: 4px;
+  }
+
+  .dealDate {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .dealDateMargin {
+    margin-bottom: 2px;
+  }
+
+  .returnButtonShow {
+    width: 100px;
+    border-radius: 12px;
+    top: calc(10px + 26.66px + 8px); /* 아이콘 마진 + 아이콘 높이 + 6px*/
+    right: calc(-100px + 10px + 13.33px);
+    /*-버튼너비 + 아이콘 마진 + 아이콘너비/2*/
+  }
+
+  .returnButtonText {
+    height: 48px;
+    font-size: 14px;
+  }
+}

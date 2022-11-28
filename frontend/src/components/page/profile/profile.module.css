@@ -1,0 +1,403 @@
+@value mainGreen, mainOrange, highlight1, highlight3, background1,textInput,lightWhite,iconLightGrey, shadow,boldWhite,unselect from "../../../common/color.css";
+@value marginLeftRight from "../../../common/size.css";
+
+.displayFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.displayNone {
+  display: none;
+}
+
+.cursorPointer {
+  cursor: pointer;
+  font-family: "Regular";
+}
+
+.backGroundIamgeHeader {
+  background-image: url("../../../../public/images/headerBackground.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12.34375vw;
+  position: absolute;
+  z-index: 0;
+}
+
+.container {
+  background-color: background1;
+  position: relative;
+  padding-bottom: 12.34375vw;
+}
+
+/* foot */
+
+.bottomContainer {
+  position: relative;
+}
+
+.backGroundIamgeFoot {
+  background-image: url("../../../../public/images/footBackground.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20.7638vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.footImg {
+  width: 18.75vw;
+  height: 10.1388vw;
+  position: absolute;
+  bottom: -1.3888vw;
+  right: 0;
+  margin-right: marginLeftRight;
+  z-index: 1;
+}
+
+/* contents */
+/* 회원정보 + 메뉴 */
+.userKategorie {
+  margin: 3.6458vw 0 0 calc(marginLeftRight - 2.1875vw);
+  position: relative;
+  height: 37.0138vw;
+  width: 16.6666vw;
+  border-radius: 1.5625vw;
+  background-color: lightWhite;
+  padding: 1.6666vw 2.1875vw 1.7708vw 2.1875vw;
+  box-shadow: 0 0.2083vw 0.4166vw shadow;
+  z-index: 1;
+}
+
+.userInfo {
+  height: 13.6805vw;
+}
+
+.userInfoTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userPhoto {
+  border-radius: 50%;
+  width: 7.2916vw;
+  height: 7.2916vw;
+  margin-bottom: 0.7291vw;
+  border: 1px solid textInput;
+  object-fit: contain;
+}
+
+.userName {
+  font-size: 0.9027vw;
+  font-family: "Medium";
+  color: highlight1;
+}
+
+.userInfoBottom {
+  display: flex;
+  align-items: center;
+}
+
+.userInfoBottomMargin {
+  margin-top: 1.5277vw;
+  margin-bottom: 0.9722vw;
+}
+
+.userInfoIcon {
+  width: 1.0416vw;
+  margin-right: 0.5208vw;
+  color: highlight3;
+}
+
+.userInfoText {
+  font-size: 0.6944vw;
+  font-family: "Medium";
+  color: highlight3;
+}
+
+.kategorieLine {
+  border: 1px solid iconLightGrey;
+  margin: 1.9791vw 0 0.4166vw 0;
+}
+
+.kategorie {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 17.6562vw; /*메인 타이틀의 마진탑(15픽셀)+글자컨텐츠 높이*/
+  justify-content: space-between;
+}
+
+.menuTitleMargin {
+  margin-top: 1.0416vw;
+}
+
+.menuTitle {
+  font-size: 0.8333vw;
+  color: highlight1;
+  font-family: "Medium";
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.menuTitleDefault {
+  font-size: 0.8333vw;
+  color: highlight1;
+  font-family: "Regular";
+  cursor: pointer;
+}
+
+.menuSub {
+  margin-top: 0.5208vw;
+  margin-left: 0.9375vw;
+  font-size: 0.6944vw;
+  color: highlight1;
+  font-weight: "Regular";
+}
+
+.menuSubMargin {
+  margin-bottom: 0.4166vw;
+}
+
+.etc {
+  display: flex;
+  justify-content: space-between;
+  color: highlight3;
+  font-family: "Regular";
+  font-size: 0.625vw;
+}
+
+/* 게시물 보드 */
+.posts {
+  position: relative;
+  margin: 3.6458vw marginLeftRight 26.597vw 0vw;
+  z-index: 1;
+  width: 49.5833vw;
+  border-radius: 1.5625vw;
+  background-color: lightWhite;
+  box-shadow: 0 0.2083vw 0.4166vw shadow;
+}
+
+.postsTitle {
+  padding: 1.0416vw 0 1.0416vw 0;
+}
+
+.titleOn {
+  font-family: "Medium";
+  font-size: 0.7638vw;
+  color: mainGreen;
+  margin-left: 2.6041vw;
+  padding-bottom: 1.0416vw;
+  border-bottom: 2px solid mainGreen;
+  cursor: pointer;
+}
+
+.titleOff {
+  font-family: "Regular";
+  font-size: 0.7638vw;
+  color: unselect;
+  margin-left: 2.6041vw;
+  cursor: pointer;
+}
+
+.editProfileTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleEdit {
+  font-family: "Medium";
+  font-size: 0.7638vw;
+  color: unselect;
+  margin-left: 2.6041vw;
+}
+
+.titleEditDone {
+  font-family: "Medium";
+  font-size: 0.7638vw;
+  color: mainGreen;
+  margin-right: 2.6041vw;
+  cursor: pointer;
+}
+
+.postsTitleLine {
+  border: 2px solid boldWhite;
+}
+
+.postsContentsEdit {
+  padding: 2.0833vw 2.1875vw 2.0833vw 2.1875vw;
+}
+
+.editProfileAlert {
+  font-family: "Medium";
+  font-size: 0.625vw;
+  color: mainOrange;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.0833vw;
+}
+
+/* 1920px 이상  */
+@media (min-width: 1920px) {
+  .backGroundIamgeHeader {
+    background-size: 100vw 237px;
+    min-height: 237px;
+  }
+
+  .backGroundIamgeFoot {
+    background-size: 100vw 300px;
+    height: 300px;
+  }
+
+  .displayFlex {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .container {
+    padding-bottom: 0;
+  }
+
+  /* foot */
+
+  .footImg {
+    width: 360px;
+    height: 195px;
+    bottom: -20px;
+    margin: 0;
+    right: 0;
+  }
+
+  .responsive {
+    box-shadow: 0 0 0 100px black inset;
+    width: 1280px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* contents */
+  /* 회원정보 + 메뉴 */
+  .userKategorie {
+    margin-top: 70px;
+    height: 710px;
+    width: 320px;
+    border-radius: 32px;
+    padding: 32px 42px 32px 42px;
+    box-shadow: 0 3px 6px shadow;
+  }
+
+  .userInfo {
+    height: 263px;
+  }
+
+  .userPhoto {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 14px;
+  }
+
+  .userName {
+    font-size: 18px;
+  }
+
+  .userInfoBottomMargin {
+    margin-top: 28px;
+    margin-bottom: 18px;
+  }
+
+  .userInfoIcon {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .userInfoText {
+    font-size: 12px;
+  }
+
+  .kategorieLine {
+    margin: 36px 0 13px 0;
+  }
+
+  .kategorie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 339px; /*메인 타이틀의 마진탑(20픽셀)+글자컨텐츠 높이*/
+  }
+
+  .menuTitleMargin {
+    margin-top: 20px;
+  }
+
+  .menuTitle {
+    font-size: 16px;
+  }
+
+  .menuTitleDefault {
+    font-size: 16px;
+  }
+
+  .menuSub {
+    margin-top: 10px;
+    margin-left: 18px;
+    font-size: 14px;
+  }
+
+  .menuSubMargin {
+    margin-bottom: 8px;
+  }
+
+  .etc {
+    font-size: 12px;
+  }
+
+  /* 게시물 보드 */
+  .posts {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-bottom: 511px;
+    width: 952px;
+    border-radius: 32px;
+    box-shadow: 0 3px 6px shadow;
+  }
+
+  .postsTitle {
+    padding: 18px 0 18px 0;
+  }
+
+  .titleOn {
+    font-size: 16px;
+    margin-left: 50px;
+    padding-bottom: 18px;
+  }
+
+  .titleOff {
+    font-size: 16px;
+    margin-left: 50px;
+  }
+
+  .titleEdit {
+    font-size: 16px;
+    margin-left: 50px;
+  }
+
+  .titleEditDone {
+    font-size: 16px;
+    margin-right: 50px;
+  }
+
+  .postsContentsEdit {
+    padding: 43px 50px 43px 50px;
+  }
+
+  .editProfileAlert {
+    font-size: 16px;
+    margin-top: 43px;
+  }
+}

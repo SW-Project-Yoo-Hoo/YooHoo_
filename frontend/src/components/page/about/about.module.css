@@ -1,0 +1,345 @@
+@value marginLeftRight from "../../../common/size.css";
+@value background2, highlight1, highlight2, highlight3, mainGreen, shadow from "../../../common/color.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("../../../../public/images/about/background.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  min-height: 165.83vw;
+}
+
+/* 맨 위 타이틀 */
+
+.title {
+  width: 100vw;
+  height: 2.6388vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d8a9;
+}
+
+.content {
+  font-family: "Bold";
+  font-size: 0.9722vw;
+}
+
+.continer {
+  width: 100vw;
+  display: grid;
+  grid-template-rows:
+    calc(100vmax * 27.419% / 100)
+    calc(100vmax * 26.941% / 100)
+    calc(100vmax * 32.52% / 100);
+
+  min-height: 188.69vw;
+}
+
+/* Footer */
+
+.wrapfooter {
+  width: 100vw;
+  height: 254px;
+  position: absolute;
+}
+
+/* Topic 1 */
+
+.topic1 {
+  width: calc(100vw - (marginLeftRight * 2));
+  display: flex;
+  margin: 0 marginLeftRight 0 marginLeftRight;
+}
+
+.topic1_span {
+  width: 22.222vw;
+  margin-top: 5.555vw;
+}
+
+.topic1_Title {
+  font-family: "Black";
+  color: highlight1;
+
+  font-size: 4.1667vw;
+  text-shadow: 0.2083vw 0.2083vw 0.1389vw shadow;
+  line-height: 5.1389vw;
+}
+
+.topic1_Content {
+  margin: 1.944vw 0 1.3194vw 0;
+  font-family: "Medium";
+  color: highlight3;
+  font-size: 1.0417vw;
+}
+
+.topic1_Content2 {
+  margin: 0 0 4.8611vw 0;
+  font-family: "Medium";
+  color: highlight3;
+  font-size: 1.0417vw;
+}
+
+.topic1_Btn {
+  width: 9.3055vw;
+  height: 3.2638vw;
+  background-color: mainGreen;
+  font-size: 0.90277vw;
+  font-family: "Bold";
+  color: white;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+.shoppingPNG {
+  width: 28.88vw;
+  height: 28.88vw;
+  margin: 2.5694vw 0 0 16.1805vw;
+}
+
+/* Topic 2 */
+
+.topic2 {
+  width: calc(100vw - (marginLeftRight * 2));
+  display: flex;
+  margin: 0 marginLeftRight 0 marginLeftRight;
+  place-items: center;
+}
+
+.topic2_span {
+  margin-top: 0;
+  margin-left: 7.7083vw;
+}
+
+.topic2_Title {
+  font-family: "Black";
+  color: highlight1;
+  font-size: 4.1667vw;
+}
+
+.content_Group {
+  margin-top: 2.6388vw;
+}
+
+.topic2_Content {
+  width: 23.819vw;
+  margin: 0;
+  font-family: "Regular";
+  color: highlight3;
+  font-size: 0.9722vw;
+}
+
+.earthPNG {
+  width: 33.888vw;
+  height: 35.416vw;
+  margin: 13.611vw 0 0 0;
+}
+
+/* Topic 3 */
+
+.topic3 {
+  width: calc(100vw - (marginLeftRight * 2));
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.topic3_Title {
+  margin-left: marginLeftRight;
+  font-family: "Black";
+  color: highlight1;
+  font-size: 4.0278vw;
+}
+
+.memberGroup {
+  width: calc(100vw - (marginLeftRight * 2));
+  display: flex;
+  flex-direction: row;
+  margin: 5.8333vw marginLeftRight 0 marginLeftRight;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.memberImg {
+  width: 14.58vw;
+  height: 14.58vw;
+}
+
+.memberName {
+  font-family: "Bold";
+  color: highlight2;
+  margin: 3.2638vw 0 0.9027vw 0;
+  font-size: 1.1806vw;
+}
+
+.memberRole {
+  font-family: "Medium";
+  color: highlight3;
+  margin: 0 0 1.388vw 0;
+  font-size: 1.1111vw;
+}
+
+.githubIcon,
+.instaIcon {
+  width: 1.875vw;
+  height: 1.875vw;
+  margin-right: 0.7638vw;
+  color: highlight3;
+}
+
+/* 그 이상 */
+@media (min-width: 1920px) {
+  /* body {
+    background-color: background2;
+  } */
+
+  .background {
+    width: 100vw;
+    height: 3186px;
+    background-size: 100vw 3186px;
+    min-height: 3186px;
+  }
+
+  .title {
+    height: 50px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+
+  .continer {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 975px 1070px 1138px;
+
+    min-height: 337px;
+  }
+
+  .wrapfooter {
+    height: 337px;
+  }
+
+  .topic2 {
+    place-items: center;
+  }
+
+  .topic1,
+  .topic2 {
+    width: calc(100vw - (marginLeftRight * 2));
+    display: flex;
+    justify-content: center;
+  }
+
+  .topic2_Title,
+  .topic3_Title {
+    font-size: 80px;
+  }
+
+  /* topic1 */
+  .topic1_span {
+    width: 434px;
+    margin-top: 105px;
+  }
+
+  .topic1_Title {
+    font-size: 80px;
+    text-shadow: 3px 3px 2px shadow;
+    line-height: 100px;
+  }
+
+  .topic1_Content {
+    margin: 33px 0 21px 0;
+    font-size: 22px;
+  }
+
+  .topic1_Content2 {
+    margin: 0 0 102px 0;
+    font-size: 22px;
+  }
+
+  .topic1_Btn {
+    width: 179px;
+    height: 63px;
+    font-size: 18px;
+  }
+
+  .shoppingPNG {
+    width: 555px;
+    height: 555px;
+    margin: 50px 0 0 306px;
+  }
+
+  /* topic2 */
+
+  .topic2_span {
+    margin-left: 148px;
+  }
+
+  .content_Group {
+    margin-top: 53px;
+  }
+
+  .topic2_Content {
+    width: 509px;
+    font-size: 20px;
+  }
+
+  .earthPNG {
+    width: 650px;
+    height: 678px;
+    margin: 260px 0 0 0;
+  }
+
+  /* topic3 */
+  .topic3 {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+
+  .topic3_Title {
+    margin: 0;
+  }
+
+  .memberGroup {
+    width: 1280px;
+    margin: 80px 0 0 0;
+  }
+
+  .member {
+    margin-right: 202px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .memberImg {
+    width: 280px;
+    height: 280px;
+  }
+
+  .memberName {
+    margin: 62px 0 14px 0;
+    font-size: 25px;
+  }
+
+  .memberRole {
+    margin: 0 0 24px 0;
+    font-size: 23px;
+  }
+
+  .githubIcon,
+  .instaIcon {
+    width: 36px;
+    height: 36px;
+    margin-right: 14px;
+  }
+}

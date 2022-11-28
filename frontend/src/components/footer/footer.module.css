@@ -1,0 +1,97 @@
+@value marginLeftRight from "../../common/size.css";
+@value background2, highlight1, highlight3, line from "../../common/color.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 254px;
+  background-color: background2;
+  position: absolute;
+  bottom: -254px;
+  border-top: 1px solid;
+  border-color: line;
+}
+
+.footer {
+  width: calc(100vw - (marginLeftRight * 2));
+  height: 225px;
+  padding-top: 30px;
+  margin: 0 marginLeftRight 0 marginLeftRight;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: highlight1;
+}
+
+.notice {
+  position: relative;
+}
+
+.noticeTitle,
+.infoTitle,
+.aboutTitle {
+  color: highlight1;
+  font-size: 16px;
+  font-family: "Medium";
+}
+
+.infoTitle {
+  text-align: center;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  color: highlight3;
+  font-size: 14px;
+  font-family: "Regular";
+  margin: 0;
+}
+
+.dept {
+  margin-top: 29px;
+  font-size: 14px;
+  font-family: "Regular";
+}
+
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .container {
+    height: 337px;
+    bottom: -337px;
+  }
+
+  .footer {
+    width: 1280px;
+    height: 300px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+  }
+
+  .noticeTitle,
+  .infoTitle,
+  .aboutTitle {
+    font-size: 20px;
+  }
+
+  .infoTitle {
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .dept {
+    margin-top: 34px;
+    font-size: 18px;
+  }
+}

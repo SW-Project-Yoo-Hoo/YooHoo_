@@ -1,0 +1,64 @@
+@value background2, textInputPlace, highlight1,lightWhite from "./common/color.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: background2;
+  overflow-x: hidden;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: textInputPlace;
+  font-size: 0.625vw;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px lightWhite inset;
+  -webkit-text-fill-color: highlight1;
+}
+
+@media (min-width: 1920px) {
+  input::placeholder {
+    color: textInputPlace;
+    font-size: 14px;
+  }
+}
+textarea:focus {
+  outline: none;
+}
+
+.App {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("./common/font/NotoSansKR-Bold.otf");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("./common/font/NotoSansKR-Regular.otf");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("./common/font/NotoSansKR-Medium.otf");
+}
+
+@font-face {
+  font-family: "Black";
+  src: url("./common/font/NotoSansKR-Black.otf");
+}

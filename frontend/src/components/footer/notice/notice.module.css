@@ -1,0 +1,47 @@
+@value background2, highlight1 from "../../../common/color.css";
+
+.container {
+  height: 142px;
+}
+
+.list {
+  display: inline-block;
+  list-style: none;
+  margin-top: 29px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: highlight1;
+  font-size: 14px;
+  font-family: "Regular";
+}
+
+.item {
+  margin: 0 0 14px 0;
+  color: highlight1;
+  font-size: 14px;
+  font-family: "Regular";
+  cursor: pointer;
+}
+
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .container {
+    height: 190px;
+  }
+
+  .list {
+    margin-top: 34px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  .item {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+  }
+}

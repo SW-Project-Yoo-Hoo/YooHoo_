@@ -1,0 +1,370 @@
+@value highlight1,unselect,mainGreen,iconLightGrey,shadow,textInput,mainOrange from "../../../../common/color.css";
+
+.displayNone {
+  display: none;
+}
+
+.colorUnselcet {
+  color: unselect;
+}
+
+.container {
+  margin: 2.0833vw 0.7291vw 5.243vw 2.1875vw;
+  min-height: 13.125vw;
+}
+
+.noPost {
+  display: flex;
+  height: 13.4895vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Regular";
+  font-size: 0.6944vw;
+  color: highlight1;
+  margin-right: calc(2.1875vw - 0.7291vw); /*컨테이너 마진 왼-오*/
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2.6388vw;
+}
+
+.post {
+  margin-right: 1.4583vw;
+  font-family: "Regular";
+  font-size: 0.6944vw;
+  cursor: pointer;
+}
+
+.postImgDay {
+  position: relative;
+}
+
+.returnButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5555vw;
+  z-index: 1;
+}
+
+.iconButton {
+  transform: rotate(90deg);
+  width: 1.3888vw;
+  height: 1.3888vw;
+  color: mainGreen;
+  background-color: white;
+  background-size: 1.3888vw 1.3888vw;
+  border-radius: 50%;
+}
+
+.postImg {
+  width: 100%;
+  height: 10.2083vw;
+  margin-bottom: 0.625vw;
+  border-radius: 1.6666vw;
+  object-fit: cover;
+}
+
+.postTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 0.2083vw;
+  word-wrap: brek-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.dealDate {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.4166vw;
+  padding-right: 0.4166vw;
+  color: unselect;
+}
+
+.dealDateMargin {
+  margin-bottom: 0.1388vw;
+}
+
+.returnButtonShow {
+  position: absolute;
+  /* width: 6.9444vw; */
+  background-color: white;
+  z-index: 1;
+  border: 1px solid iconLightGrey;
+  border-radius: 0.4166vw;
+  top: calc(0.5555vw + 1.3888vw + 0.4166vw);
+  /* 아이콘 마진 + 아이콘 높이 + 6px*/
+  /* right: calc(-5.2083vw + 0.5555vw + 0.6944vw); */
+  /*-버튼너비 + 아이콘 마진 + 아이콘너비/2*/
+}
+
+.returnButtonText {
+  display: flex;
+  height: 2.5vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6944vw;
+  color: highlight1;
+}
+
+.returnButtonLine {
+  border-top: 1px solid iconLightGrey;
+}
+
+.recommend {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20.8333vw;
+  height: 22.9166vw;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 1.8055vw;
+  box-shadow: 0 0.2083vw 0.4166vw shadow;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendTitle {
+  flex: 14.96;
+  border-bottom: 2px solid #f3f4f5;
+  font-family: "Regular";
+  color: unselect;
+  font-size: 0.9027vw;
+  padding-left: 2.0833vw;
+  display: flex;
+  align-items: center;
+}
+
+.recommendDate {
+  flex: calc(100 - 14.96 - 17.72);
+  padding: 2.0833vw 2.0833vw 1.1458vw 2.0833vw;
+}
+
+.recommendStartDate {
+  margin-bottom: 1.6666vw;
+}
+
+.warningText {
+  display: flex;
+  justify-content: center;
+  color: mainOrange;
+  font-family: "Regular";
+  font-size: 0.5555vw;
+}
+
+.label {
+  font-size: 0.9027vw;
+  color: black;
+  font-family: "Regular";
+}
+
+.input {
+  display: flex;
+  height: 2.6041vw;
+  width: 100%;
+  border: 1px solid textInput;
+  border-radius: 0.9027vw;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 0.6944vw;
+  padding-left: 0.8333vw;
+  font-size: 0.8333vw;
+  font-family: "Regular";
+  background: white;
+  color: unselect;
+}
+
+.input::placeholder {
+  font-family: "Regular";
+  font-size: 0.8333vw;
+}
+
+.recommendEndDate {
+  margin-bottom: 1.1458vw;
+}
+
+.recommendSubmit {
+  flex: 17.72;
+  border-top: 2px solid #f3f4f5;
+}
+
+.recommendSubmitButton {
+  width: 50%;
+  height: 100%;
+  font-family: "Medium";
+  font-size: 0.8333vw;
+  color: unselect;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 1.8055vw;
+}
+
+.recommendDone {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 2px solid #f3f4f5;
+  color: mainGreen;
+}
+
+.recommendImage {
+  /* box-sizing: border-box; */
+  animation: recommendImg 1.5s infinite;
+}
+
+@keyframes recommendImg {
+  from {
+    border: 4px solid rgba(234, 151, 62, 0.2);
+  }
+
+  50% {
+    border: 4px solid rgba(234, 151, 62, 1);
+  }
+
+  to {
+    border: 4px solid rgba(234, 151, 62, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .recommend {
+    height: calc(22.9166vw + 15px);
+  }
+  .returnButtonShow {
+    width: 100px;
+    right: calc(-100px + 0.5555vw + 0.6944vw);
+  }
+}
+
+@media (min-width: 1301px) {
+  .recommend {
+    height: 22.9166vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .returnButtonShow {
+    width: 6.9444vw;
+    right: calc(-6.9444vw + 0.5555vw + 0.6944vw);
+  }
+}
+
+/* 1920px 이상  */
+@media (min-width: 1920px) {
+  .container {
+    margin: 40px 14px 100px 42px;
+    min-height: 252px;
+  }
+
+  .noPost {
+    height: 259px;
+    font-size: 16px;
+    margin-right: calc(42px - 14px); /*컨테이너 마진 왼-오*/
+  }
+
+  .gridWrapper {
+    row-gap: 50px;
+  }
+
+  .post {
+    margin-right: 28px;
+    font-size: 14px;
+  }
+
+  .returnButton {
+    margin: 10px;
+  }
+
+  .iconButton {
+    width: 26.66px;
+    height: 26.66px;
+  }
+
+  .postImg {
+    width: 100%;
+    height: 196px;
+    margin-bottom: 12px;
+    border-radius: 32px;
+  }
+
+  .postTitle {
+    padding-bottom: 4px;
+  }
+
+  .dealDate {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .dealDateMargin {
+    margin-bottom: 2px;
+  }
+
+  .returnButtonShow {
+    width: 132px;
+    border-radius: 12px;
+    top: calc(10px + 26.66px + 8px); /* 아이콘 마진 + 아이콘 높이 + 6px*/
+    right: calc(-132px + 10px + 13.33px);
+    /*-버튼너비 + 아이콘 마진 + 아이콘너비/2*/
+  }
+
+  .returnButtonText {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  /*/////////////////////////////////////////////////////*/
+
+  .recommend {
+    width: 401px;
+    height: 441px;
+    box-shadow: 0 3px 6px shadow;
+    border-radius: 32px;
+  }
+
+  .recommendTitle {
+    font-size: 18px;
+    padding-left: 40px;
+  }
+
+  .recommendDate {
+    padding: 40px 40px 20px 40px;
+  }
+
+  .recommendStartDate {
+    margin-bottom: 32px;
+  }
+
+  .warningText {
+    font-size: 12px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .input {
+    height: 50px;
+    margin-top: 12px;
+    padding-left: 16px;
+    font-size: 16px;
+  }
+
+  .input::placeholder {
+    font-size: 16px;
+  }
+
+  .recommendEndDate {
+    margin-bottom: 22px;
+  }
+
+  .recommendSubmitButton {
+    font-size: 16px;
+    border-radius: 32px;
+  }
+}

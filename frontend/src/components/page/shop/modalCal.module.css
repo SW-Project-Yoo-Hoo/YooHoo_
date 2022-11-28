@@ -1,0 +1,190 @@
+@value mainOrange, highlight2, calender, unselect, textInputPlace, textInput, mainGreen from "../../../common/color.css";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  width: 51.5972vw;
+  height: 30.8333vw;
+  border-radius: 2.0833vw;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.modalBtn {
+  position: relative;
+  left: 47.4306vw;
+  top: 2.2917vw;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.modalBtnIcon {
+  width: 1.0417vw;
+  height: 1.0417vw;
+}
+
+.calendar {
+  width: 23.8194vw;
+  height: 19.6528vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2.8472vw 0 0 4.7222vw;
+}
+
+.selectDate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 4.7222vw 3.125vw 0 0;
+  font-family: "Regular";
+}
+
+.title {
+  font-size: 0.9028vw;
+  margin: 0 0 0.9028vw 0;
+  padding: 0;
+}
+
+.end {
+  margin-top: 1.3889vw;
+}
+
+.dateContainer {
+  width: 15.9722vw;
+  height: 2.6389vw;
+  background-color: white;
+  border: 0.0694vw solid textInput;
+  border-radius: 0.6944vw;
+}
+
+.mean,
+.selected,
+.unselected {
+  align-items: center;
+  font-size: 0.8333vw;
+  color: textInputPlace;
+  margin: 0.5444vw 0 0 0.8333vw;
+  padding: 0;
+}
+
+.selected {
+  color: unselect;
+}
+
+.finishBtn {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 2.8472vw 20.9722vw;
+  padding: 0;
+  width: 9.7222vw;
+  height: 2.6389vw;
+  color: white;
+  font-size: 0.9028vw;
+  font-family: "Medium";
+  background-color: mainGreen;
+  border: 0.0694vw solid textInput;
+  border-radius: 1.0417vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warning {
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+.warningText {
+  color: mainOrange;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5278vw;
+  font-size: 0.7639vw;
+  font-family: "Regular";
+}
+
+/* ================================= */
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .modal {
+    width: 990px;
+    height: 592px;
+    border-radius: 40px;
+  }
+
+  .modalBtn {
+    left: 911px;
+    top: 44px;
+  }
+
+  .modalBtnIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .calendar {
+    width: 457px;
+    height: 377px;
+    margin: 55px 0 0 91px;
+  }
+
+  .selectDate {
+    margin: 91px 60px 0 0;
+  }
+
+  .title {
+    font-size: 18px;
+    margin: 0 0 18px 0;
+  }
+
+  .end {
+    margin-top: 27px;
+  }
+
+  .dateContainer {
+    width: 307px;
+    height: 50px;
+    border: 1px solid textInput;
+    border-radius: 13px;
+  }
+
+  .mean,
+  .selected,
+  .unselected {
+    font-size: 16px;
+    margin: 13px 0 0 16px;
+  }
+
+  .finishBtn {
+    margin: 0 0 55px 403px;
+    width: 186px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid textInput;
+    border-radius: 20px;
+  }
+
+  .warningText {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}

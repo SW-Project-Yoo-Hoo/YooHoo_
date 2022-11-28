@@ -1,0 +1,200 @@
+@value mainGreen,highlight1,background1,textInput,lightWhite,mainOrange from "../../../common/color.css";
+@value marginLeftRight from "../../../common/size.css";
+
+@font-face {
+  font-family: "Medium";
+  src: url("../../../common/font/NotoSansKR-Medium.otf");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("../../../common/font/NotoSansKR-Regular.otf");
+}
+
+.container {
+  background-color: background1;
+  position: relative;
+  padding-bottom: 7.6388vw;
+}
+
+.backGroundIamge {
+  background-image: url("../../../../public/images/headerBackground.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12.34375vw;
+  position: absolute;
+  z-index: 0;
+}
+
+.signUpContainer {
+  position: relative;
+  margin-left: marginLeftRight;
+  margin-right: marginLeftRight;
+  margin-top: 5.0694vw;
+  display: flex;
+  align-items: flex-start;
+}
+
+.loginImg {
+  width: 20.3472vw;
+  height: 20.3472vw;
+  margin-right: 13.0555vw;
+  margin-top: 11.1111vw;
+}
+
+.signUpForm {
+  width: 20.8333vw;
+}
+
+.title {
+  color: highlight1;
+  font-size: 1.1111vw;
+  font-family: "Medium";
+}
+
+.form {
+  height: 4.1666vw;
+  width: 100%;
+  margin-top: 2.2916vw;
+}
+
+.label {
+  width: 100%;
+  font-size: 0.6944vw;
+  color: highlight1;
+  font-family: "Regular";
+}
+
+.labelSpan {
+  color: mainGreen;
+}
+
+.input {
+  display: flex;
+  height: 2.5vw;
+  width: 100%;
+  border: 1px solid textInput;
+  border-radius: 0.8333vw;
+  background: lightWhite;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 0.625vw;
+  padding-left: 0.8333vw;
+  margin-top: 0.625vw;
+  font-family: "Medium";
+  color: highlight1;
+}
+
+.alertInfoNone {
+  display: none;
+}
+
+.alertInfo {
+  margin-top: 4.5833vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.alertSpan {
+  font-family: "Medium";
+  font-size: 0.625vw;
+  color: mainOrange;
+}
+
+.signUpButtonDefault {
+  height: 2.9166vw;
+  margin-bottom: 1.5625vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5833vw;
+}
+
+.signUpButton {
+  height: 2.9166vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.302vw;
+}
+
+.signUpButtonStyle {
+  font-family: "Medium";
+  font-size: 0.8333vw;
+  color: white;
+  background-color: mainGreen;
+  width: 12.5vw;
+  border-radius: 1.1111vw;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* 1920px 이상 */
+@media (min-width: 1920px) {
+  .backGroundIamge {
+    background-size: 100vw 237px;
+    min-height: 237px;
+  }
+  .signUpContainer {
+    width: 100vw;
+    justify-content: center;
+    margin: 110px 0 0 0;
+  }
+
+  .loginImg {
+    width: 390px;
+    height: 390px;
+    margin-right: 250px;
+    margin-top: 210px;
+  }
+
+  .signUpForm {
+    width: 400px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .form {
+    height: 80px;
+    margin-top: 44px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .input {
+    height: 48px;
+    border-radius: 12px;
+    font-size: 14px;
+    padding-left: 16px;
+    margin-top: 12px;
+  }
+
+  .alertInfo {
+    margin-top: 56px;
+  }
+
+  .alertSpan {
+    font-size: 14px;
+  }
+
+  .signUpButtonDefault {
+    height: 56px;
+    margin-bottom: 30px;
+    margin-top: 56px;
+  }
+
+  .signUpButton {
+    height: 56px;
+    margin-top: 25px;
+  }
+
+  .signUpButtonStyle {
+    font-size: 18px;
+    width: 240px;
+    border-radius: 22px;
+  }
+}

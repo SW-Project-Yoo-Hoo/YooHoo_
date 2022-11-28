@@ -1,0 +1,119 @@
+@value mainGreen,highlight2, textInput,unselect, boldWhite from "../../../../common/color.css";
+
+.displayNone {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 9.2361vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo {
+  width: 9.2361vw;
+  height: 9.2361vw;
+  position: relative;
+}
+
+.showPhoto {
+  width: 9.2361vw;
+  height: 9.2361vw;
+  border-radius: 50%;
+  background-color: boldWhite;
+  border: 1px solid textInput;
+}
+
+.photoButton {
+  width: 2.3611vw;
+  height: 2.3611vw;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: mainGreen;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoButtonIcon {
+  width: 60%;
+  height: 60%;
+  color: white;
+  cursor: pointer;
+}
+
+.editInfo {
+  width: 31.25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.editInfoColumn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: "Regular";
+  font-size: 0.9027vw;
+  color: unselect;
+}
+
+.input {
+  width: 26.3888vw;
+
+  height: 2.5vw;
+  border: 1px solid textInput;
+  border-radius: 0.8333vw;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 0.6944vw;
+  padding-left: 0.8333vw;
+  font-family: "Medium";
+  background: lightWhite;
+  color: highlight2;
+}
+
+/* 1920px 이상  */
+@media (min-width: 1920px) {
+  .container {
+    height: 177px;
+  }
+
+  .photo {
+    width: 177px;
+    height: 177px;
+  }
+
+  .showPhoto {
+    width: 177px;
+    height: 177px;
+  }
+
+  .photoButton {
+    width: 45px;
+    height: 45px;
+  }
+
+  .editInfo {
+    width: 598px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .input {
+    width: 506px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 14px;
+    padding-left: 16px;
+  }
+}

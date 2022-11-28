@@ -1,0 +1,220 @@
+@value background1, background2, highlight2 from "../../../common/color.css";
+
+/* ================================= */
+/* 헤더, 배경, 푸터 CSS */
+
+.background {
+  width: 100vw;
+  background-color: background1;
+  position: relative;
+}
+
+.imgGroup {
+  width: 100vw;
+  position: relative;
+}
+
+.headerImg {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faqPNG {
+  width: 34.0278vw;
+  height: 24.7222vw;
+  margin: 0 34.4444vw 0 31.4583vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Footer */
+
+.footerImg {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  transform: translateY(0.2778vw);
+}
+
+/* ================================= */
+/* FAQ - QnA container CSS */
+
+.faqGroup {
+  margin: 12.2222vw 0 0 0;
+}
+
+.showFAQ,
+.closeFAQ {
+  width: 58.8542vw;
+  margin: 0 20.5556vw 3.2639vw 20.5556vw;
+  border-radius: 1.8056vw;
+}
+
+.showFAQ {
+  height: 14vw;
+  background-color: #f3eddc;
+}
+
+.closeFAQ {
+  height: 5.5556vw;
+  background-color: #fbeed1;
+}
+
+.closeFAQ_question {
+  display: flex;
+  margin-left: 3.8194vw;
+  cursor: pointer;
+}
+
+/* ================================= */
+/* QnA 1개 CSS*/
+
+.plusIcon {
+  width: 1.0417vw;
+  height: 1.0417vw;
+  margin-right: 1.5972vw;
+}
+
+.minusIcon {
+  width: 1.3889vw;
+  height: 0.2778vw;
+  margin-right: 1.3889vw;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+}
+
+.Q {
+  display: flex;
+  align-items: center;
+  margin-top: 2.0139vw;
+}
+
+.question {
+  font-family: "Bold";
+  font-size: 0.9722vw;
+  color: highlight2;
+}
+
+.A {
+  justify-content: center;
+  align-items: center;
+  margin: 1.6667vw 0 0 2.7778vw;
+}
+
+.answer {
+  white-space: pre-wrap;
+  font-family: "Regular";
+  font-size: 0.9028vw;
+  line-height: 1.3194vw;
+  margin: 0;
+  color: highlight2;
+}
+
+.answer_none {
+  display: none;
+}
+
+.p {
+  margin: 0;
+}
+
+/* 그 이상 */
+@media (min-width: 1920px) {
+  /* ================================= */
+  /* 헤더, 배경, 푸터 CSS */
+
+  .background {
+    height: 100%;
+  }
+
+  .headerImg {
+    height: 235px;
+  }
+
+  .faqPNG {
+    width: 654px;
+    height: 654px;
+    margin: 0;
+    left: calc((100vw - 654px) * 0.5);
+  }
+
+  .footerImg {
+    height: 300px;
+    background-color: none;
+  }
+
+  .footer {
+    padding-bottom: 100vh;
+    background-color: background2;
+  }
+
+  /* ================================= */
+  /* FAQ - QnA container CSS */
+
+  .faqGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 330px 0 0 0;
+  }
+
+  .showFAQ,
+  .closeFAQ {
+    width: 1130px;
+    margin: 0 394px 64px 395px;
+    border-radius: 34px;
+  }
+
+  .showFAQ {
+    height: 270px;
+  }
+
+  .closeFAQ {
+    height: 108px;
+  }
+
+  .closeFAQ_question {
+    margin-left: 74px;
+  }
+
+  /* ================================= */
+  /* QnA 1개 CSS*/
+
+  .plusIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+  }
+
+  .minusIcon {
+    width: 20px;
+    height: 4px;
+    margin-right: 30px;
+  }
+
+  .Q {
+    margin-top: 40px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+  .A {
+    margin: 30px 0 0 50px;
+  }
+
+  .answer {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

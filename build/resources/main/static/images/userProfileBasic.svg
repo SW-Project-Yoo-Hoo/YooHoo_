@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="633" height="633" viewBox="0 0 633 633">
+  <g id="그룹_801" data-name="그룹 801" transform="translate(-368 -200)">
+    <g id="그룹_162" data-name="그룹 162" transform="translate(368 200)">
+      <g id="그룹_161" data-name="그룹 161" transform="translate(0 0)">
+        <g id="타원_76" data-name="타원 76" fill="#e6e6e6" stroke="#d8d8d8" stroke-width="1">
+          <circle cx="316.5" cy="316.5" r="316.5" stroke="none"/>
+          <circle cx="316.5" cy="316.5" r="316" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <path id="ic_person_24px" d="M162.291,162.291A79.145,79.145,0,1,0,83.145,83.145,79.123,79.123,0,0,0,162.291,162.291Zm0,39.573C109.461,201.863,4,228.377,4,281.008v39.573H320.581V281.008C320.581,228.377,215.12,201.863,162.291,201.863Z" transform="translate(522.605 354.605)" fill="#fffefa"/>
+  </g>
+</svg>

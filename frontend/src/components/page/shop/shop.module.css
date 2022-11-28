@@ -1,0 +1,729 @@
+@value iconLightGrey, textInputPlace, textInput, mainGreen, lightWhite, shadow, unselect, background1, background2, highlight1, line, unselect, mainOrange from "../../../common/color.css";
+
+/* ================================= */
+/* 헤더, 배경, 푸터 CSS */
+
+.background {
+  width: 100vw;
+  background-color: background1;
+  position: relative;
+}
+
+.headerImg {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Footer */
+
+.footerImg {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.footerImg2 {
+  width: 23.125vw;
+  height: 23.125vw;
+  margin: 0 0 -2.6778vw 17.6389vw;
+  position: relative;
+  bottom: 0;
+}
+
+.footer {
+  margin-top: auto;
+  z-index: 0;
+}
+/* ================================= */
+
+.title,
+.hr,
+.subTitle,
+.recommendBtn,
+.recommendDiv {
+  z-index: 3;
+}
+
+.title {
+  position: absolute;
+  margin-top: 2.2222vw;
+  margin-left: 17.7778vw;
+  font-size: 1.5278vw;
+  font-family: "Medium";
+  color: highlight1;
+}
+
+.hr {
+  width: 10.4167vw;
+  position: absolute;
+  border-top: 1px solid line;
+  margin: 5.7639vw 0 0 17.7778vw;
+}
+
+.subTitle {
+  position: absolute;
+  margin: 7.0139vw 0 0 17.7778vw;
+  font-family: "Medium";
+  font-size: 0.9028vw;
+  color: highlight1;
+}
+
+/* ================================= */
+/* 조합 추천 받기*/
+
+.recommendDiv {
+  position: absolute;
+  right: 0;
+  margin-top: 2.5vw;
+  margin-right: 16.6667vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendBtn {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 0.7639vw;
+  color: mainGreen;
+  font-family: "Medium";
+  cursor: pointer;
+}
+
+.recommendIcon {
+  width: 1vw;
+  height: 1vw;
+  margin: 0 0.3167vw 0 0;
+}
+
+.contents {
+  width: 23.8483vw;
+  height: 40.7639vw;
+  background-color: lightWhite;
+  border-radius: 1.6667vw;
+  box-shadow: 0 0.2083vw 0.4167vw shadow;
+  /* padding: 1.0417vw 0 2.0833vw 0; */
+  padding: 1.0417vw 0 0 0;
+  margin-top: 0.4167vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.finishBtn {
+  margin: 0;
+  display: flex;
+  /* justify-content: right; */
+  font-family: "Medium";
+  color: unselect;
+  font-size: 0.8333vw;
+  margin-left: 19.0972vw;
+  margin-right: 2.6389vw;
+  cursor: pointer;
+}
+
+.recommendHr {
+  width: 100%;
+  border-top: 0.0694vw solid #f3f4f5;
+  margin: 0.8333vw 0 2.0833vw 0;
+}
+
+.dateContainer {
+  width: 100%;
+}
+
+.startTitle,
+.endTitle {
+  font-size: 0.8333vw;
+  font-family: "Regular";
+  color: highlight1;
+  margin: 0 8.1389vw 0.7639vw 2.0833vw;
+}
+
+.endTitle {
+  margin: 0 0 0.7639vw 0;
+}
+
+.dateDiv {
+  width: 8.0556vw;
+  display: flex;
+  margin: 0.7639vw 0 1.5972vw 2.0833vw;
+}
+
+.dateInput {
+  width: 8.0556vw;
+  height: 2.2917vw;
+  margin-right: 3.3778vw;
+  font-family: "Regular";
+  font-size: 0.7639vw;
+  background-color: lightWhite;
+  border-radius: 0.6944vw;
+  border: 0.0694vw solid textInput;
+  color: unselect;
+  text-align: center;
+  padding: 0;
+  /* padding-left: 0.8333vw; */
+}
+
+.categories {
+  height: 10.0694vw;
+  position: relative;
+}
+
+.spanGroup2 {
+  width: 100%;
+  margin-bottom: 0.7639vw;
+  position: relative;
+}
+
+.title2 {
+  font-size: 0.7639vw;
+  font-family: "Regular";
+  color: mainGreen;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 2.0833vw;
+}
+
+.btnGroup {
+  width: 100%;
+  height: 5.2083vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0 2.0833vw 0 2.0833vw;
+  margin-bottom: 1.3889vw;
+}
+
+.tlBtn,
+.trBtn,
+.blBtn,
+.brBtn,
+.tBtn,
+.bBtn {
+  font-size: 0.7639vw;
+  color: unselect;
+  background: lightWhite;
+  border: 0.0694vw solid textInput;
+  cursor: pointer;
+  font-family: "Regular";
+}
+
+.tBtn {
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.bBtn {
+  border-left: 0;
+}
+
+.tlBtn {
+  border-top-left-radius: 0.6944vw;
+  border-bottom: 0;
+}
+
+.trBtn {
+  border-top-right-radius: 0.6944vw;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.blBtn {
+  border-bottom-left-radius: 0.6944vw;
+}
+
+.brBtn {
+  border-bottom-right-radius: 0.6944vw;
+  border-left: 0;
+  cursor: default;
+}
+
+.select {
+  color: mainGreen;
+  font-family: "Medium";
+}
+.unselect {
+  color: unselect;
+}
+
+.getBtn {
+  background: lightWhite;
+  font-size: 0.8333vw;
+  color: mainGreen;
+  font-family: "Medium";
+  outline: 0;
+  border: 0;
+  text-align: right;
+  margin-left: 17.2222vw;
+  margin-right: 2.0833vw;
+  cursor: pointer;
+}
+
+.recommendHr2 {
+  margin-top: 1.25vw;
+  border-top: 0.0694vw solid #f3f4f5;
+}
+
+.recommend {
+  width: 100%;
+  height: 20.1389vw;
+  /* height: 18.0556vw; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alertText {
+  position: absolute;
+  font-size: 0.8333vw;
+  font-family: "Regular";
+  color: textInputPlace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.productInfo {
+  width: 10.2083vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recommendGroup {
+  width: 10.2083vw;
+  position: relative;
+  margin-top: 0.625vw;
+  margin-left: 0.2778vw;
+}
+
+.recommendImg {
+  width: 10.2083vw;
+  height: 10.2083vw;
+  border-radius: 1.6667vw;
+  object-fit: cover;
+}
+
+.recommendTitle {
+  font-size: 0.7639vw;
+  font-family: "Regular";
+  margin-bottom: 0.2083vw;
+}
+
+.recommendDateGroup {
+  display: flex;
+  margin-left: 0.1389vw;
+  margin-bottom: 0.1389vw;
+}
+
+.recommendDateTitle,
+.recommendDate {
+  font-size: 0.625vw;
+  font-family: "Regular";
+  color: unselect;
+}
+
+.recommendDate {
+  position: absolute;
+  right: 0;
+}
+/* ================================= */
+
+.container {
+  width: 100vw;
+  position: absolute;
+  background-color: background1;
+}
+
+.productGroup {
+  z-index: 2;
+  width: 54.1667vw;
+  /* height: 50.8333vw; */
+  position: relative;
+  margin: 4.3056vw 0 3.4722vw 29.1667vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2.6389vw;
+  column-gap: 1.6667vw;
+}
+
+.product {
+  cursor: pointer;
+}
+
+.info {
+  width: 11.25vw;
+  margin: 0.625vw 0 0 0.5556vw;
+  font-size: 0.6944vw;
+  font-family: "Regular";
+  line-height: 1.0417vw;
+}
+
+.info2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 0.2983vw;
+}
+
+.productImg {
+  width: 12.2917vw;
+  height: 12.2917vw;
+  border-radius: 1.6667vw;
+  object-fit: cover;
+}
+
+.productTitle {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productPrice {
+  font-size: 0.6944vw;
+  font-family: "Regular";
+  margin: 0;
+  color: unselect;
+}
+
+.unselectWishIcon,
+.selectWishIcon {
+  width: 0.8333vw;
+  height: 0.8333vw;
+  position: absolute;
+  right: 0;
+  color: mainOrange;
+}
+
+.unselectWishIcon {
+  color: unselect;
+}
+
+/* ================================= */
+/* 그 이상 */
+@media (min-width: 1920px) {
+  .headerImg {
+    height: 237px;
+  }
+
+  .footerImg {
+    height: 300px;
+  }
+
+  .footerImg2 {
+    width: 444px;
+    height: 444px;
+    margin: 0 auto -40px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 418px;
+  }
+
+  .spanGroup {
+    width: 1920px;
+    height: 82px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    position: absolute;
+    padding-top: 42px;
+    margin-left: 341px;
+    font-size: 30px;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: 338px;
+  }
+
+  .recommendDiv {
+    position: absolute;
+    font-size: 14px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 48px;
+    left: 1200px;
+  }
+
+  .recommendIcon {
+    width: 15px;
+    height: 15px;
+    margin: 0 8px 0 0;
+  }
+
+  .hr {
+    width: 200px;
+    position: absolute;
+    border-top: 1px solid line;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 111px;
+    left: 338px;
+  }
+
+  .subTitle {
+    position: absolute;
+    font-size: 18px;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 135px;
+    left: 338px;
+  }
+
+  .unselectWishIcon {
+    width: 16px;
+    height: 16px;
+  }
+  /* ================================= */
+
+  .container {
+    width: 100vw;
+    position: absolute;
+    background-color: background1;
+  }
+
+  .productGroup {
+    z-index: 2;
+    width: 1040px;
+    position: relative;
+    margin: 0 auto 67px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 38px;
+    column-gap: 24px;
+    left: 123px;
+  }
+
+  .info {
+    width: 216px;
+    margin: 12px 0 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .info2 {
+    margin-top: 4px;
+  }
+
+  .productImg {
+    width: 236px;
+    height: 236px;
+    border-radius: 32px;
+  }
+
+  .productPrice {
+    font-size: 14px;
+  }
+
+  .wishIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* ================================= */
+  /* 조합 추천 받기*/
+
+  .recommendDiv {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    top: 48px;
+    left: 1160px;
+  }
+
+  .recommendBtn {
+    position: absolute;
+    font-size: 14px;
+  }
+
+  .recommendIcon {
+    width: 19px;
+    height: 19px;
+    margin: 0 9px 0 0;
+  }
+
+  .contents {
+    width: 448px;
+    height: 782px;
+    border-radius: 32px;
+    box-shadow: 0 3px 6px shadow;
+    padding: 20px 0 0 0;
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    right: 323px;
+  }
+
+  .finishBtn {
+    font-size: 16px;
+    margin-left: 367px;
+    margin-right: 50px;
+  }
+
+  .recommendHr {
+    width: 100%;
+    border-top: 2px solid #f3f4f5;
+    margin: 16px 0 40px 0;
+  }
+
+  .startTitle,
+  .endTitle {
+    font-size: 14px;
+    margin: 0 153px 14px 40px;
+  }
+
+  .endTitle {
+    margin: 0 0 14px 0;
+  }
+
+  .dateDiv {
+    width: 154px;
+    margin: 14px 0 30px 40px;
+  }
+
+  .dateInput {
+    width: 154px;
+    height: 44px;
+    margin-right: 53px;
+    font-size: 14px;
+    border-radius: 13px;
+    border: 1px solid textInput;
+  }
+
+  .categories {
+    height: 193px;
+  }
+
+  .spanGroup2 {
+    margin-bottom: 14px;
+  }
+
+  .title2 {
+    font-size: 14px;
+    margin-right: 40px;
+  }
+
+  .btnGroup {
+    height: 100px;
+    padding: 0 40px 0 40px;
+    margin-bottom: 26px;
+  }
+
+  .tlBtn,
+  .trBtn,
+  .blBtn,
+  .brBtn,
+  .tBtn,
+  .bBtn {
+    font-size: 14px;
+    border: 1px solid textInput;
+  }
+
+  .tBtn {
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  .bBtn {
+    border-left: 0;
+  }
+
+  .tlBtn {
+    border-top-left-radius: 13px;
+    border-bottom: 0;
+  }
+
+  .trBtn {
+    border-top-right-radius: 13px;
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  .blBtn {
+    border-bottom-left-radius: 13px;
+  }
+
+  .brBtn {
+    border-bottom-right-radius: 13px;
+    border-left: 0;
+  }
+
+  .getBtn {
+    font-size: 16px;
+    margin-left: 330px;
+    margin-right: 40px;
+  }
+
+  .recommendHr2 {
+    margin-top: 24px;
+    border-top: 1px solid #f3f4f5;
+  }
+
+  .recommend {
+    height: 387px;
+  }
+
+  .alertText {
+    font-size: 16px;
+  }
+
+  .productInfo {
+    width: 196px;
+  }
+
+  .recommendGroup {
+    width: 184px;
+    margin-top: 12px;
+    margin-left: 5px;
+  }
+
+  .recommendImg {
+    width: 196px;
+    height: 196px;
+    border-radius: 32px;
+  }
+
+  .recommendTitle {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .recommendDateGroup {
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+
+  .recommendDateTitle,
+  .recommendDate {
+    font-size: 12px;
+  }
+
+  /* ================================= */
+}
