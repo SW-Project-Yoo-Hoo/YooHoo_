@@ -17,10 +17,10 @@ public class WebConfig implements WebMvcConfigurer {
 //                .order(1) //낮을수록 먼저 호출
 //                .addPathPatterns("/**")
 //                .excludePathPatterns("/css/**","/*.ico","/error"); //제외할 패턴
-        registry.addInterceptor(new LoginCheckInterceptor())
-                .order(1)
-                .addPathPatterns("/**")
-                .excludePathPatterns("/","/login","/posts/{id}","/isLogin","/my/recommended_post","/css/**","/*.ico","/error");
+//        registry.addInterceptor(new LoginCheckInterceptor())
+//                .order(1)
+//                .addPathPatterns("/**")
+//                .excludePathPatterns("/","/login","/posts/{id}","/isLogin","/my/recommended_post","/css/**","/*.ico","/error");
     }
 
     @Override

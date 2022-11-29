@@ -43,7 +43,6 @@ dependencies {
 	}
 
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-
 }
 
 tasks.named('test') {
@@ -51,7 +50,6 @@ tasks.named('test') {
 }
 
 //////////////////////////////
-
 
 def frontendDir = "$projectDir/frontend"
 
@@ -72,8 +70,8 @@ task installReact(type: Exec) {
 	inputs.dir "$frontendDir"
 	group = BasePlugin.BUILD_GROUP
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-		commandLine "yarn.cmd", "audit", "fix"
-		commandLine 'yarn.cmd', 'install'
+		commandLine "npm.cmd", "audit", "fix"
+		commandLine 'npm.cmd', 'install'
 	} else {
 		commandLine "npm", "audit", "fix"
 		commandLine 'npm', 'install'

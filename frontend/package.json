@@ -1,30 +1,31 @@
 {
-  "name": "yoohoo",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@reduxjs/toolkit": "^1.8.5",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "axios": "^0.27.2",
-    "classnames": "^2.3.1",
+    "@reduxjs/toolkit": "^1.9.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.0",
+    "bootstrap": "^5.2.3",
+    "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
+    "gradle": "^1.2.4",
     "http-proxy-middleware": "^2.0.6",
     "moment": "^2.29.4",
     "react": "^18.2.0",
-    "react-calendar": "^3.9.0",
-    "react-date-range": "^1.4.0",
+    "react-bootstrap": "^2.6.0",
+    "react-calendar": "^4.0.0",
     "react-dom": "^18.2.0",
-    "react-horizontal-scrolling-menu": "^3.2.0",
-    "react-icons": "^4.4.0",
-    "react-modal": "^3.15.1",
-    "react-redux": "^8.0.2",
-    "react-router-dom": "^6.3.0",
+    "react-horizontal-scrolling-menu": "^3.2.3",
+    "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
-    "redux": "^4.2.0",
-    "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.0"
+    "styled-components": "^5.3.6",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,7 +35,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "react-app/jest"
     ]
   },
   "proxy": "http://localhost:8181",
